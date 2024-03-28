@@ -28,15 +28,8 @@
     },
     {
       "label": "Debug: Excel Desktop",
-      "type": "shell",
-      "command": "npm",
-      "args": [
-        "run",
-        "start:desktop",
-        "--",
-        "--app",
-        "excel"
-      ],
+      "type": "npm",
+      "script": "start -- --app excel",
       "presentation": {
         "clear": true,
         "panel": "dedicated"
@@ -45,15 +38,8 @@
     },
     {
       "label": "Debug: Outlook Desktop",
-      "type": "shell",
-      "command": "npm",
-      "args": [
-        "run",
-        "start:desktop",
-        "--",
-        "--app",
-        "outlook"
-      ],
+      "type": "npm",
+      "script": "start -- --app outlook",
       "presentation": {
         "clear": true,
         "panel": "dedicated"
@@ -62,15 +48,8 @@
     },
     {
       "label": "Debug: PowerPoint Desktop",
-      "type": "shell",
-      "command": "npm",
-      "args": [
-        "run",
-        "start:desktop",
-        "--",
-        "--app",
-        "powerpoint"
-      ],
+      "type": "npm",
+      "script": "start -- --app powerpoint",
       "presentation": {
         "clear": true,
         "panel": "dedicated"
@@ -79,15 +58,8 @@
     },
     {
       "label": "Debug: Word Desktop",
-      "type": "shell",
-      "command": "npm",
-      "args": [
-        "run",
-        "start:desktop",
-        "--",
-        "--app",
-        "word"
-      ],
+      "type": "npm",
+      "script": "start -- --app word",
       "presentation": {
         "clear": true,
         "panel": "dedicated"
