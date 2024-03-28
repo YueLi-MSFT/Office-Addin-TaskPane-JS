@@ -18,15 +18,22 @@ Office.onReady((info) => {
 async function actionExcel(event) {
   try {
     await Excel.run(async (context) => {
+      /**
+       * Insert your Excel code here
+       */
       const range = context.workbook.getSelectedRange();
+
+      // Read the range address
+      range.load("address");
+
+      // Update the fill color
       range.format.fill.color = "yellow";
+
       await context.sync();
     });
   } catch (error) {
-    // Note: In a production add-in, notify the user through your add-in's UI.
     console.error(error);
   }
-
   // Be sure to indicate when the add-in command function is complete
   event.completed();
 }
